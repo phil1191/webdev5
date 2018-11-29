@@ -52,7 +52,7 @@
         const esriStreets = L.esri.basemapLayer('Gray').addTo(map);
 
         // add hosted feature layer
-        const earthquakesLayer = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/infested_waters_phil1191/FeatureServer'}).addTo(map);
+        const earthquakesLayer = L.esri.featureLayer({url: 'https://services.arcgis.com/8df8p0NlLFEShl0r/arcgis/rest/services/infested_waters_phil1191/MapServer'}).addTo(map);
 
         // set up popup for earthquakes layer
         earthquakesLayer.bindPopup(function(evt) {
